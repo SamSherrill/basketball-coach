@@ -1,4 +1,6 @@
-# Basketball Coaches App
+# Basketball Coach's App
+Descriptive Name: Simple Basketball Performance Metrics
+Coachify
 
 ## Notes to self about initial build:
 The package JSON is built from the MERN Start repo that Jonathan shared. I could instead reference my HW 21, which is based on the 1st activity in the MERN unit, which has a different build. It uses if-env npm package to check if the app is running in production (for example, on Heroku) or if the app is running in development. If running in production, it starts a specific way. If running in Dev, it starts with nodemon running in the back end. Unless I decide to change to that, I'll need to *npm run dev* to startup the app locally.
