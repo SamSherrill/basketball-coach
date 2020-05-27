@@ -1,36 +1,15 @@
-import React, { useEffect } from "react";
-import logo from "./logo.svg";
+import React from "react";
+// import logo from "./logo.svg";
 import "./App.css";
-import axios from "axios";
+// import axios from "axios";
 
 function App() {
-  useEffect(() => {
-    axios
-      .get("/api/config")
-      .then((response) => {
-        console.log(response);
-      })
-      .catch((err) => {
-        console.log(err);
-      });
-  }, []);
+  
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <>
+      <h1 className="main-title"> Coachify </h1>
+      <h2 className="app-subtitle"> Simplified Views of Basketball Performance Metrics </h2>
+    </>
   );
 }
 
