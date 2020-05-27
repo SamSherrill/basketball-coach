@@ -1,7 +1,12 @@
 # Basketball Coach's App
-Descriptive Name: Simple Basketball Performance Metrics
-Coachify is a cliche working name
 
+Coachify is a cliche working name. A more descriptive name would be: Simple Basketball Performance Metrics for Coaches.
+
+# Description
+
+Work-in-progress: An app to help basketball coaches best track & view data about individual & team performance. Starting late-May 2020. The idea originally came from my brother, who has coached basketball. He frankly thinks about basketball too much, and I'm feeding an addiction by developing this app. However, it's a really good idea, and a robust application to get practice in thinking about & executing a development plan.
+
+# Development Plans
 
 ## Main Things to Focus on As I Build
 
@@ -44,6 +49,14 @@ Gotta learn this. I'm not sure if I'll be able to learn this working solo, but l
 ### Redux
 
 Not sure that I'm going to try this out on this app. But maybe I will. I know basically nothing about Redux, so we'll see. I'm working on getting code down now, and if I have to rewrite it later to implement Redux or something else, then that is simply more practice for me.
+
+### Bootstrap
+
+Bootstrap isn't new to me. I have a decent amount of experience with the library. However, I only used React Bootstrap in my final boot camp project, and I was more back end focused on that one. I'll probably try to implement it, but I'll certainly use original Bootstrap.
+
+## Stylesheets
+
+Found [this video](https://www.youtube.com/watch?v=j5P9FHiBVNo) while researching the better ways to use CSS in React. Gotta consider this.
 
 ### Modals
 
@@ -103,9 +116,9 @@ I was recently exposed to MVVM briefly. I'll do some research there.
 
 Yarn: It came in the boilerplate. I don't use Yarn I may want to remove it later on, unless I find a use for it.
 
-## Business Questions to Ask Myself
+# Business Questions to Ask Myself
 
-### How could I create the most value off season?
+## How could I create the most value off season?
 
 I'd have to sell the app subscriptions per year, anticipating high use & feature demand in-season. However, coaches are thinking about their sport all year round. What can I do to highlight useful information, build practice & game plans, and do self-development off-season?
 

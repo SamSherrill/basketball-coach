@@ -1,14 +1,14 @@
 import React from "react";
 // import logo from "./logo.svg";
-// import "./App.css";
+import "./App.css";
 // import axios from "axios";
 
 function App() {
   
   return (
     <>
-      <h1> Coachify </h1>
-      <h2> Simplified Views of Basketball Performance Metrics </h2>
+      <h1 className="main-title"> Coachify </h1>
+      <h2 className="app-subtitle"> Simplified Views of Basketball Performance Metrics </h2>
     </>
   );
 }
