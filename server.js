@@ -9,6 +9,8 @@ const app = express();
 app.use(express.urlencoded({ extended: true }));
 app.use(express.json());
 
+// Require controllers here, once they're ready
+
 app.get("/api/config", (req, res) => {
   res.json({
     success: true,
@@ -22,6 +24,9 @@ app.get("*", (req, res) => {
   res.sendFile(path.join(__dirname, "/client/build/index.html"));
 });
 
-app.listen(PORT, () => {
-  console.log(`Express App is running on http://localhost:${PORT}`);
+// db.sequelize.sync({force: true}).then(function () {
+db.sequelize.sync().then(() => {
+  app.listen(PORT, () => {
+    console.log(`Server listening on: http://localhost:${PORT}`);
+  });
 });
