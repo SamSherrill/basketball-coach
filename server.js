@@ -6,6 +6,8 @@ const PORT = process.env.PORT || 3001;
 
 const app = express();
 
+const db = require("./models");
+
 app.use(express.urlencoded({ extended: true }));
 app.use(express.json());
 
@@ -24,8 +26,8 @@ app.get("*", (req, res) => {
   res.sendFile(path.join(__dirname, "/client/build/index.html"));
 });
 
-// db.sequelize.sync({force: true}).then(function () {
-db.sequelize.sync().then(() => {
+db.sequelize.sync({force: true}).then(function () {
+// db.sequelize.sync().then(() => {
   app.listen(PORT, () => {
     console.log(`Server listening on: http://localhost:${PORT}`);
   });
