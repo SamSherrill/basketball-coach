@@ -1,7 +1,7 @@
 {
   "name": "metrics-based-coaching",
   "version": "1.0.0",
-  "description": "Mongo-Express-React-Node",
+  "description": "App to help basketball coaches look at simplified views of the most useful data.",
   "main": "server.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
@@ -23,12 +23,14 @@
   },
   "homepage": "https://github.com/samsherrill/basketball-coach#readme",
   "dependencies": {
+    "axios": "^0.19.2",
     "dotenv": "^8.2.0",
     "express": "^4.17.1",
-    "mongoose": "^5.9.11"
+    "mysql2": "^2.1.0",
+    "sequelize": "^6.3.4"
   },
   "devDependencies": {
     "concurrently": "^5.2.0",
-    "yarn": "^1.22.4"
+    "nodemon": "^2.0.4"
   }
 }
