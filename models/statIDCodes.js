@@ -1,18 +1,6 @@
 module.exports = function (sequelize, DataTypes) {
-    const Team = sequelize.define("Team", {
-        name: DataTypes.STRING,
-        wins: DataTypes.INTEGER,
-        loses: DataTypes.INTEGER,
-    });
-
-    // Team.associate = function (models) {
-    //     Team.belongsToMany(models.SteamUser, {
-    //         through: "SteamUserGames",
-    //         foreignKey: "gameId",
-    //     });
-    // };
-
-    return Team;
+    const StatIDCodes = sequelize.define("StatIDCodes", {});
+    return StatIDCodes;
 };
 
 // Nate agreed that he needs to add taking charge, drawing a foul, and maybe some others
@@ -79,22 +67,3 @@ module.exports = function (sequelize, DataTypes) {
 // Instincts on Def - Bad
 // Instincts on Off - Good
 // Instincts on Off - Bad
-
-// Example model code from my game library comparison app
-// module.exports = function (sequelize, DataTypes) {
-//     const Game = sequelize.define("Game", {
-//         name: DataTypes.STRING,
-//         appId: DataTypes.STRING,
-//         playtime: DataTypes.STRING,
-//         gameBanner: DataTypes.STRING
-//     });
-
-//     Game.associate = function (models) {
-//         Game.belongsToMany(models.SteamUser, {
-//             through: "SteamUserGames",
-//             foreignKey: "gameId",
-//         });
-//     };
-
-//     return Game;
-// };
