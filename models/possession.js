@@ -1,5 +1,5 @@
 module.exports = function (sequelize, DataTypes) {
-    const Player = sequelize.define("Possession", {
+    const Possession = sequelize.define("Possession", {
         offensive: DataTypes.BOOLEAN,
         possessionOfGame: DataTypes.INTEGER,
         rebounds: DataTypes.INTEGER,

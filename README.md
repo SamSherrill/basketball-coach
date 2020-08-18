@@ -8,6 +8,8 @@ Work-in-progress: An app to help basketball coaches best track & view data about
 
 # Development Plans
 
+##
+
 ## Main Things to Focus on As I Build
 
 ### The Usual

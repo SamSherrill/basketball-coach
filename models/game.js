@@ -8,10 +8,11 @@ module.exports = function (sequelize, DataTypes) {
         didHomeTeamWin: DataTypes.BOOLEAN,
         // MySQL dates: https://dev.mysql.com/doc/refman/8.0/en/datetime.html#:~:text=MySQL%20retrieves%20and%20displays%20DATE,%3Amm%3Ass%20'%20format.
         // ** Check all of my time & location datatypes!
-        startTime: DataTypes.TIMESTAMP,
+        // Tried using startTime: DataTypes.TIMESTAMP, but that throws an error
+        startTime: DataTypes.DATE,
         // In the GUI, game endtime should probably default to 2.5 or 3 hours after start time.
         // Should I set a default for endTime based on startTime?
-        endTime: DataTypes.TIMESTAMP,
+        endTime: DataTypes.DATE,
         timeZone: DataTypes.INTEGER,
         locationOfGame: DataTypes.STRING,
     });
